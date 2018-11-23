@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="author" content="Guangchuang YU">
+  <meta name="description" content="Postdoc researcher">
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+
+  <link rel="alternate" href="https://guangchuangyu.github.io/index.xml" type="application/rss+xml" title="Guangchuang YU">
+  <link rel="feed" href="https://guangchuangyu.github.io/index.xml" type="application/rss+xml" title="Guangchuang YU">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://guangchuangyu.github.io/2018/04/setting-ggplot2-background-with-ggbackground/">
+
+  
+
+  <title>setting ggplot2 background with ggbackground | Guangchuang YU</title>
+
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Guangchuang YU</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/resume">
+            
+            <span>Resume</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/cn">
+            
+            <span>中文入口</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+  <div class="article-container">
+    <h1 itemprop="name">setting ggplot2 background with ggbackground</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2018-04-18 21:00:00 &#43;0800 HKT" itemprop="datePublished">
+      Wed, Apr 18, 2018
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/r">R</a
+    >, 
+    
+    <a href="/categories/visualization">Visualization</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/ggimage">ggimage</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguangchuangyu.github.io%2f2018%2f04%2fsetting-ggplot2-background-with-ggbackground%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=setting%20ggplot2%20background%20with%20ggbackground&amp;url=https%3a%2f%2fguangchuangyu.github.io%2f2018%2f04%2fsetting-ggplot2-background-with-ggbackground%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguangchuangyu.github.io%2f2018%2f04%2fsetting-ggplot2-background-with-ggbackground%2f&amp;title=setting%20ggplot2%20background%20with%20ggbackground"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguangchuangyu.github.io%2f2018%2f04%2fsetting-ggplot2-background-with-ggbackground%2f&amp;title=setting%20ggplot2%20background%20with%20ggbackground"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=setting%20ggplot2%20background%20with%20ggbackground&amp;body=https%3a%2f%2fguangchuangyu.github.io%2f2018%2f04%2fsetting-ggplot2-background-with-ggbackground%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+        <p><a href="https://cran.r-project.org/package=ggimage">ggimage</a> 0.1.4 is available on CRAN.</p>
+<p>This release introduces a new function called <code>ggbackground</code> for setting image background as <code>ggplot</code> canvas.</p>
+<pre class="r"><code>require(ggplot2)
+p &lt;- ggplot(iris) + aes(x = Sepal.Length, y = Sepal.Width, color=Species) + 
+    geom_point(size=5) + theme_classic()</code></pre>
+<p>Suppose we have the above <code>ggplot</code> object, <code>p</code>, the only thing we need to do is passing the <code>p</code> with an image file name (local or remote) to <code>ggbackground</code>, as demonstrated below:</p>
+<!--more-->
+<pre class="r"><code>require(ggimage) 
+img = &quot;https://assets.bakker.com/ProductPics/560x676/10028-00-BAKI_20170109094316.jpg&quot;
+ggbackground(p, img)</code></pre>
+<p><img src="/post/R/ggimage/ggbackground_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>This image file is too colorful and it is hard to see the patterns of the data points. We can manipulate the image using the functions provided by <code>magick</code> package. For example, the following function emulate a classic high-pass filter from photoshop:</p>
+<pre class="r"><code>require(magick)
+ggbackground(p, img, 
+    image_fun = function(x) image_negate(image_convolve(x, &#39;DoG:0,0,2&#39;)))</code></pre>
+<p><img src="/post/R/ggimage/ggbackground_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Here are examples of setting transparency and color:</p>
+<pre class="r"><code>img = &quot;http://phylopic.org/assets/images/submissions/bf5fe2c5-1247-4ed9-93e2-d5af255ec462.512.png&quot;
+p1 = ggbackground(p, img) + ggtitle(&quot;ggbackground(p, img)&quot;)
+p2 = ggbackground(p, img, alpha=.3) + ggtitle(&quot;ggbackground(p, img, alpha=.3)&quot;)
+p3 = ggbackground(p, img, alpha=.3, color=&quot;steelblue&quot;) + ggtitle(&#39;ggbackground(p, img, alpha=.3, color=&quot;steelblue&quot;)&#39;)
+cowplot::plot_grid(p1, p2, p3, ncol=3)</code></pre>
+<p><img src="/post/R/ggimage/ggbackground_files/figure-html/unnamed-chunk-5-1.png" width="1152" /></p>
+<div id="links" class="section level2">
+<h2>Links</h2>
+<ul>
+<li>ggimage package: <a href="https://cran.r-project.org/package=ggimage">CRAN</a>, <a href="https://github.com/GuangchuangYu/ggimage">GitHub</a></li>
+<li><a href="https://cran.r-project.org/web/packages/ggimage/vignettes/ggimage.html">ggimage introduction</a></li>
+<li><a href="https://guangchuangyu.github.io/software/ggtree/vignettes/ggtree-ggimage.html">Annotating phylogenetic tree with images using ggtree and ggimage</a></li>
+</ul>
+</div>
+
+    </div>
+  </div>
+
+  <center><span class="zaln"><a href="https://guangchuangyu.github.io/2017/11/bmc-journal-protects-paper-of-plagiarism/" class="zb">Plea to against BMC</a></span></center>
+
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="https://guangchuangyu.github.io/2018/03/annotating-phylogenetic-tree-with-images-using-ggtree-and-ggimage/"><span
+      aria-hidden="true">&larr;</span> Annotating phylogenetic tree with images using ggtree and ggimage</a></li>
+    
+
+    
+    <li class="next"><a href="https://guangchuangyu.github.io/2018/04/rename-phylogeny-tip-labels-in-treeio/">rename phylogeny tip labels in treeio <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gcyu" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div style="width:320px;margin:auto;">
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5qpvv5zz7fp&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script>
+</div>
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2016 Guangchuang YU &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-77901140-1', 'auto');
+        ga('send', 'pageview');
+
+         
+        var links = document.querySelectorAll('a');
+        Array.prototype.map.call(links, function(item) {
+            if (item.host != document.location.host) {
+                item.addEventListener('click', function() {
+                    var action = item.getAttribute('data-action') || 'follow';
+                    ga('send', 'event', 'outbound', action, item.href);
+                });
+            }
+        });
+    </script>
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+
