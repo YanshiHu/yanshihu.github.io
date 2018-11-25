@@ -1918,9 +1918,18 @@ hybrid_plot(virus_info, flow_info)
 		-->
 
   <body>
-    <!--百度地图容器-->
+ 
+ 
+  <style type="text/css">
+  #map img {
+  max-width: inherit;
+  }
+  </style>
+  
+	<!--百度地图容器-->
     <div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
   </body>
+
   <script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){
