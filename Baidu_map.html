@@ -6,7 +6,7 @@
     <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
     <title>Baidu Map API</title>
     <!--引用百度地图API-->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=bd4c7567f8b5bc1a4dac0054a2afe7335b6d22cb"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TBGiZnGdK994dgWaciPO2o46BzBTHji4"></script>
   </head>
   
   <body>
@@ -23,7 +23,7 @@
     }
     function createMap(){ 
       map = new BMap.Map("map"); 
-      map.centerAndZoom(new BMap.Point(120.096505,30.302739),19);
+      map.centerAndZoom(new BMap.Point(120.096545,30.302836),19);
     }
     function setMapEvent(){
       map.enableScrollWheelZoom();
@@ -38,7 +38,7 @@
     }
     function addMapOverlay(){
       var markers = [
-        {content:"生物信息学实验室",title:"浙大生科院",imageOffset: {width:-46,height:-21},position:{lat:30.30261,lng:120.096289}}
+        {content:"生物信息学实验室",title:"浙大生科院",imageOffset: {width:-46,height:-21},position:{lat:30.302595,lng:120.096127}}
       ];
       for(var index = 0; index < markers.length; index++ ){
         var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
