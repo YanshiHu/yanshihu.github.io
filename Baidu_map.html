@@ -1,23 +1,27 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
-<meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
-<meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
-<title>百度地图API自定义地图</title>
-<!--引用百度地图API-->
+<!DOCTYPE html>  
+<html>
+<head>  
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>Baidu Map API</title>  
+<style type="text/css">  
+html{height:100%}  
+body{height:100%;margin:0px;padding:0px}  
+#container{height:100%}  
+</style>  
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=TBGiZnGdK994dgWaciPO2o46BzBTHji4">
+//v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"
+</script>
+</head>  
+<!--
 <style type="text/css">
     html,body{margin:0;padding:0;}
     .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.0&ak=TBGiZnGdK994dgWaciPO2o46BzBTHji4"></script>
-</head>
-
-<body>
-  <!--百度地图容器-->
-  <div style="width:697px;height:550px;border:#ccc solid 1px;" id="container"></div>
-</body>
+ -->
+<body>  
+<div id="container"></div> 
 <script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){
@@ -114,5 +118,8 @@
     }
     
     initMap();//创建和初始化地图
-</script>
+</script>  
+</body>  
 </html>
+
+
