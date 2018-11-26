@@ -11,7 +11,7 @@
   
   <body>
     <!--百度地图容器-->
-    <div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+    <div style="width:700px;height:550px;border:#ccc solid 1px;font-size:18px" id="map"></div>
   </body>
   <script type="text/javascript">
     //创建和初始化地图函数：
@@ -38,7 +38,7 @@
     }
     function addMapOverlay(){
       var markers = [
-        {content:"浙大生科院生物信息学实验室",title:"",imageOffset: {width:-46,height:-21},position:{lat:30.302595,lng:120.096127}}
+        {content:"生物信息学实验室",title:"",imageOffset: {width:-46,height:-21},position:{lat:30.302595,lng:120.096127}}
       ];
       for(var index = 0; index < markers.length; index++ ){
         var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
@@ -47,7 +47,7 @@
         })});
         var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
         var opts = {
-          width: 200,
+          width: 100,
           title: markers[index].title,
           enableMessage: false
         };
@@ -55,7 +55,7 @@
         marker.setLabel(label);
         addClickHandler(marker,infoWindow);
         map.addOverlay(marker);
-      };
+		};
     }
     //向地图添加控件
     function addMapControl(){
