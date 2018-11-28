@@ -1,0 +1,33 @@
+<html>
+<head>
+	
+	<title>Quick Start - Leaflet</title>
+
+	<meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+
+
+	
+</head>
+
+<body>
+	<div id="map" style="width: 700px; height: 550px;border:#ccc solid 1px;font-size:20px;"></div>
+</body>
+
+<script>
+
+	var map = L.map('map').setView([30.29875, 120.084992], 17);
+
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors & Yanshi Hu'
+	}).addTo(map);
+
+	L.marker([30.29875, 120.084992]).addTo(map)
+		.bindPopup('<div align="center">College of Life Sciences @ ZJU<br>Lab of Bioinformatics</div>')
+		.openPopup();
+
+</script>
+
+</html>
