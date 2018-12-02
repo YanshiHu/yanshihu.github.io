@@ -1245,427 +1245,76 @@ to the community.</p>
     
 
   </div>
-<!--  
-  <div class="col-xs-12 col-md-8">
 
+  
+   <div class="col-xs-12 col-md-8">
     
 
+<div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">  
+
+    <div class="col-md-12">
+      <a href="http://conf.bionet.nsc.ru/bgrssb2018/en/">
+        <img src="/img/iBSB_ru.png" class="pub-banner"
+             itemprop="image">
+      </a>
+    </div>
+    <div class="col-md-12">	
+	
     
+    <ul class="fa-ul">
       
+      <li itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="name">Analyzing the genes related to Alzheimer’s disease via a nework and pathway-based approach</span>
+  <!-- <p> -->
+
+      <div class="pub-authors" itemprop="author">
         
+        <strong>YS Hu</strong><sup>*</sup>, J Wang<sup>*</sup>, M Chen
         
+      </div>
+
+      <div class="pub-publication">
+        
+        <em><a href="http://conf.bionet.nsc.ru/srw2018/en/" target="_blank">Integrative Bioinformatics and Systems Biology (WIBSB-2018)</a> DOI:10.18699/WIBSB-2018-28</em>
+        
+      </div>
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://conf.bionet.nsc.ru/bgrssb2018/wp-content/uploads/sites/15/2017/01/WIBSB-China_14.08.pdf" target="_blank">
+  DOI
+</a>
 
 
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://guangchuangyu.github.io/2018/04/rename-phylogeny-tip-labels-in-treeio/" itemprop="url">rename phylogeny tip labels in treeio</a>
-  </h3>
-  
+<a class="btn btn-primary btn-outline btn-xs" href="/PDF/WIBSB-China_14.08.pdf" target="_blank">
+  PDF
+</a>
 
-<div class="article-metadata">
 
-  <span class="article-date">
-    <time datetime="2018-04-19 11:00:08 &#43;0800 HKT" itemprop="datePublished">
-      Thu, Apr 19, 2018
-    </time>
-  </span>
+<!-- </p> -->
+</li>
+ 
+            <li>
+                <i class="fa-li fa fa-university fa-lg" aria-hidden="true"></i>
+                <span id="talk-university" itemprop="university"><a href="https://english.nsu.ru/" target="_blank">Novosibirsk State Univesity</a> & <a href="http://www.bionet.nsc.ru/en" target="_blank">ICG</a></span>
+            </li>
 
-  
-  
-  
-  <span class="article-categories">
-    <i class="fa fa-folder"></i>
+            
+            <li>
+                <i class="fa-li fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                <span id="talk-address" itemprop="address">Novosibirsk, Russia</span>
+            </li>
+ 
+    </ul>
     
-    <a href="/categories/evolution">Evolution</a
-    >, 
-    
-    <a href="/categories/visualization">Visualization</a
-    >, 
-    
-    <a href="/categories/r">R</a
-    >
-    
-  </span>
-  
-  
 
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/ggtree">ggtree</a
-    >, 
-    
-    <a href="/tags/treeio">treeio</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    I don’t know whether ‘rename taxa’ is a common task or not. It seems not a good idea to rename taxa in Newick tree text, since it may introduce problems when mapping the original sequence alignment to the tree.
-If you just want to show different or additional information when plotting the tree, it is fine and easy to do it using ggtree:
- require(treeio) ## Loading required package: treeio require(ggtree) ## Loading required package: ggtree ## ggtree v1.
-    
   </div>
-  <p class="read-more">
-    <a href="https://guangchuangyu.github.io/2018/04/rename-phylogeny-tip-labels-in-treeio/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
 </div>
 
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
+    </div> 
   
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://guangchuangyu.github.io/2018/04/setting-ggplot2-background-with-ggbackground/" itemprop="url">setting ggplot2 background with ggbackground</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2018-04-18 21:00:00 &#43;0800 HKT" itemprop="datePublished">
-      Wed, Apr 18, 2018
-    </time>
-  </span>
-
-  
-  
-  
-  <span class="article-categories">
-    <i class="fa fa-folder"></i>
-    
-    <a href="/categories/r">R</a
-    >, 
-    
-    <a href="/categories/visualization">Visualization</a
-    >
-    
-  </span>
   
   
 
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/ggimage">ggimage</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    ggimage 0.1.4 is available on CRAN.
-This release introduces a new function called ggbackground for setting image background as ggplot canvas.
-require(ggplot2) p &lt;- ggplot(iris) + aes(x = Sepal.Length, y = Sepal.Width, color=Species) + geom_point(size=5) + theme_classic() Suppose we have the above ggplot object, p, the only thing we need to do is passing the p with an image file name (local or remote) to ggbackground, as demonstrated below:
- require(ggimage) img = &quot;https://assets.
-    
-  </div>
-  <p class="read-more">
-    <a href="https://guangchuangyu.github.io/2018/04/setting-ggplot2-background-with-ggbackground/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://guangchuangyu.github.io/2018/03/annotating-phylogenetic-tree-with-images-using-ggtree-and-ggimage/" itemprop="url">Annotating phylogenetic tree with images using ggtree and ggimage</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2018-03-01 11:10:48 &#43;0800 HKT" itemprop="datePublished">
-      Thu, Mar 1, 2018
-    </time>
-  </span>
-
-  
-  
-  
-  <span class="article-categories">
-    <i class="fa fa-folder"></i>
-    
-    <a href="/categories/visualization">Visualization</a
-    >, 
-    
-    <a href="/categories/r">R</a
-    >
-    
-  </span>
-  
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/ggtree">ggtree</a
-    >, 
-    
-    <a href="/tags/ggimage">ggimage</a
-    >, 
-    
-    <a href="/tags/tree">tree</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    With ggimage, we are able to plot images using grammar of graphics. The layers defined in ggimage can be directly applied to ggtree to annotate phylogenetic tree using local/online image files.
-ggtree seamlessly work with ggimage. The geom_tiplab and geom_nodelab can accept parameter of geom=&quot;image&quot; to parse taxa labels as image files and use them to “label” the taxa using images instead of text strings. Here are some examples for demonstration.
-    
-  </div>
-  <p class="read-more">
-    <a href="https://guangchuangyu.github.io/2018/03/annotating-phylogenetic-tree-with-images-using-ggtree-and-ggimage/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://guangchuangyu.github.io/2017/12/visualizing-reassortment-history-using-seqcombo/" itemprop="url">visualizing reassortment history using seqcombo</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2017-12-05 11:09:07 &#43;0800 HKT" itemprop="datePublished">
-      Tue, Dec 5, 2017
-    </time>
-  </span>
-
-  
-  
-  
-  <span class="article-categories">
-    <i class="fa fa-folder"></i>
-    
-    <a href="/categories/genomics">Genomics</a
-    >, 
-    
-    <a href="/categories/r">R</a
-    >
-    
-  </span>
-  
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/seqcombo">seqcombo</a
-    >, 
-    
-    <a href="/tags/influenza">influenza</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    <p>Reassortment is an important strategy for influenza A viruses to
-introduce a HA subtype that is new to human populations, which creates
-the possibilities of pandemic.</p>
-
-<p><img src="https://raw.githubusercontent.com/GuangchuangYu/seqcombo/master/vignettes/figures/srep25549-f2.jpg" alt="" /></p>
-
-<p>A diagram showed above (Figure 2 of <code>doi:10.1038/srep25549</code>) is widely
-used to illustrate the reassortment events. While such diagrams are
-mostly manually draw and edit without software tool to automatically
-generate. Here, I implemented the <code>hybrid_plot</code> function for producing
-publication quality figure of reassortment events.</p>
-
-<pre><code>library(tibble)
-library(ggplot2)
-
-
-n &lt;- 8
-
-virus_info &lt;- tibble(
-    id = 1:7,
-    x = c(rep(1990, 4), rep(2000, 2), 2009),
-    y = c(1,2,3,5, 1.5, 3, 4),
-    segment_color = list(
-        rep('purple', n),
-        rep('red', n),
-        rep('darkgreen', n),
-        rep('lightgreen', n),
-        c('darkgreen', 'darkgreen', 'red', 'darkgreen', 'red', 'purple', 'red', 'purple'),
-        c('darkgreen', 'darkgreen', 'red', 'darkgreen', 'darkgreen', 'purple', 'red', 'purple'),
-        c('darkgreen', 'lightgreen', 'lightgreen', 'darkgreen', 'darkgreen', 'purple', 'red', 'purple'))
-)
-
-flow_info &lt;- tibble(from = c(1,2,3,3,4,5,6),
-                    to = c(5,5,5,6,7,6,7))
-hybrid_plot(virus_info, flow_info)
-</code></pre>
-
-<p><img src="http://guangchuangyu.github.io/blog_images/Bioconductor/seqcombo/reassortment_files/figure-markdown_strict/unnamed-chunk-2-1.png" alt="" /></p>
-
-<p></p>
-    
-  </div>
-  <p class="read-more">
-    <a href="https://guangchuangyu.github.io/2017/12/visualizing-reassortment-history-using-seqcombo/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://guangchuangyu.github.io/2017/11/bmc-journal-protects-paper-of-plagiarism/" itemprop="url">BMC journal protects paper of plagiarism</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2017-11-09 21:51:43 &#43;0800 HKT" itemprop="datePublished">
-      Thu, Nov 9, 2017
-    </time>
-  </span>
-
-  
-  
-  
-  <span class="article-categories">
-    <i class="fa fa-folder"></i>
-    
-    <a href="/categories/biology">Biology</a
-    >, 
-    
-    <a href="/categories/research">Research</a
-    >
-    
-  </span>
-  
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/bmc">BMC</a
-    >, 
-    
-    <a href="/tags/plagiarism">plagiarism</a
-    >, 
-    
-    <a href="/tags/gosemsim">GOSemSim</a
-    >, 
-    
-    <a href="/tags/ppipre">ppiPre</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    <p>My friend who doing his PhD study at Johns Hopkins just send me the link about <a href="https://retractionwatch.com/2017/11/07/17-johns-hopkins-researchers-resign-protest-ed-board-nature-journal/" target="_blank">a SR paper of plagiarism</a>. I have very similar experence of <a href="https://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-7-S2-S8" target="_blank">a paper published on BMC Systems Biology</a>, which plagiarized <a href="https://www.ncbi.nlm.nih.gov/pubmed/20179076" target="_blank">my work</a> and the editor just decided to publish an erratum.</p>
-
-<p>Deng <em>etc.</em> published an R package, ppiPre, that copied source code of my package, GOSemSim, and pretended that they developed these algorithms by themselves in their paper.</p>
-
-<p>Here is the screenshot of the source code (left: ppiPre, right: GOSemSim).</p>
-
-<p><img src="https://guangchuangyu.github.io/blog_images/screenshots/Screenshot 2017-07-17 19.43.51.png" alt="" /></p>
-
-<p>You can find out more on <a href="http://guangchuangyu.github.io/2014/11/proper-use-of-gosemsim/" target="_blank">my blog post</a>.</p>
-
-<p>As a developer of several open source software, I am glad that someone find my source code useful and happy if someone use my source code to make something better. But I am not happy if someone copies my source code by removing author information and changing function names to pretend the code was developed by himself. The situation is even worse in academic. Taking someone else&rsquo;s works and passing it off as one&rsquo;s own is definitely plagiarism and not allow in academic.</p>
-
-<p></p>
-    
-  </div>
-  <p class="read-more">
-    <a href="https://guangchuangyu.github.io/2017/11/bmc-journal-protects-paper-of-plagiarism/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-    
--->
-  </div>
 </div>
 
     </div>
