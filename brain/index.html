@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="cye-disabled cye-nm"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<style> 
+body {
+background:rgb(242, 245, 243);
+min-width:950px;
+
+font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+font-size: 15px;
+}
+.item {
+	float:left;	
+	}
+.item1 {
+	float:left;	
+	margin-left:8%;
+	}
+.item2 {
+	float:right;
+	margin-right:8%;	
+	}
+img {width:85%;height:85%;}
+.clear{clear:both;}
+a { text-decoration: none; }
+a:hover {text-decoration: underline}
+.div
+{
+width:60%;
+margin-left:auto;
+margin-right:auto;
+background-color:white;
+border:2px solid grey;
+-moz-border-radius:18px;
+-khtml-border-radius:18px;
+-webkit-border-radius:18px;
+border-radius:18px;
+padding:5px;
+position: relative;
+box-shadow:4px 8px 20px rgba(0, 0, 0, 0.386719);
+}
+.header
+{
+font-size:22px;
+}
+.content
+{
+  width:97%;	
+  margin-left:auto;
+margin-right:auto;
+}
+.line{ clear:both; height:1px;margin:1em 0;overflow:hidden;border-bottom:1px solid white;}
+#footer{margin-bottom:30px;text-align:center;font-size:0.825em;color:#333;}
+
+table.hovertable {
+	
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.hovertable th {
+	background-color:#EBEBEB;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.hovertable tr {
+	background-color:#EBEBEB;
+}
+table.hovertable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+</style>
+<style id="nightModeStyle">
+html.cye-enabled.cye-nm:not(*:-webkit-full-screen) body,
+ html.cye-enabled.cye-nm:not(*:-webkit-full-screen) #cye-workaround-body {-webkit-filter:contrast(91%) brightness(84%) invert(1);}</style><style id="cyebody">html.cye-enabled.cye-lm body{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;}</style><style id="cyediv">html.cye-enabled.cye-lm div{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;}</style><style id="cyetable">html.cye-enabled.cye-lm th{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;}html.cye-enabled.cye-lm td{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;}</style><style id="cyetextInput">html.cye-enabled.cye-lm input[type=text]{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;}html.cye-enabled.cye-lm textarea{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;}</style><style id="cyeselect">html.cye-enabled.cye-lm select{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;}</style><style id="cyeul">html.cye-enabled.cye-lm ul{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;}</style><style id="cyeChangeByClick">html.cye-enabled.cye-lm .cye-lm-tag,html.cye-enabled.cye-lm.cye-lm-tag{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;}</style></head>
+<body style="">
+<div class="div">
+<div class="header">
+	<br><b>Systems biology analyses unravel underlying substrates between Parkinson's and Crohn's disease</b>
+</div>
+<div class="content">
+	<div class="item">
+  <br>
+	<h3>Introduction</h3>
+    <p>Recent studies have revealed that endogenous circRNAs could generate proteins and the circRNA-derived proteins play important roles in cellular responses to environmental stress and myogenesis, thereby increasing the complexity of transcriptome and proteome. To gain more insights into the novel layer of gene activity, comprehensive identification of circRNAs with protein-coding potential is the first step. Here, to facilitate the biologists to realize this, we present an integrated tool, CircPro. As an automated high-throughput data analysis pipeline, it is capable of detecting circRNAs, predicting their protein-coding potential and discovering junction reads from Ribo-Seq data.</p>
+    <p>Based on total/poly(A)- RNA-Seq and Ribo-Seq data, CircPro enables users to discover circRNAs with protein-coding potential. CircPro is composed of three modules as below:</p>
+    <p align="center"><a href="./workflow_placeholder.jpg" target="_blank">
+    <img src="./workflow_placeholder.jpg" alt="work flow">
+  </a></p>
+    <p>&#8226;	Module 1: circRNA detection</p>
+    <p>The total/poly(A)- RNA sequencing reads are mapped to reference genome using <a href="http://bio-bwa.sourceforge.net/">BWA-MEM</a>. The generated SAM alignment is used by CIRI2 for de novo detection of circRNAs. The gene annotation in GTF file format is used to classify the identified circRNAs based on exon boundaries.</p>
+    <p>&#8226;	Module 2: protein-coding potential score</p>
+    <p>To calculate circRNA coding potential score, first, CircPro extracts circRNA sequences. For the exonic circRNAs, the introns are removed. Then, <a href="http://cpc.cbi.pku.edu.cn/">CPC</a> is used to assess the protein-coding potential of circRNAs. This procedure will generate the coding/noncoding classification, the coding potential score and the information of open reading frame (ORF).</p>
+    <p>&#8226;	Module 3: junction reads from Ribo-Seq</p>
+    <p>First, the Ribo-Seq reads are processed by removing adaptors using <a href="http://hannonlab.cshl.edu/fastx_toolkit/index.html">FASTX-Toolkit</a>. Then, the reads are mapped to rRNA library, such as <a href="http://www.ensembl.org/index.html">Ensembl</a> and <a href="http://rfam.xfam.org/">RFam</a>, to remove the rRNAs. The cleaned reads are mapped to reference genome using <a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml">Bowtie2</a>. The unmapped reads extracted from the alignment SAM file using <a href="http://samtools.sourceforge.net/">SAMtools</a> are further mapped to the library of circRNA junction sites, which is constructed by extracting N nucleotides from both sides of the junction site (N is the length of Ribo-Seq reads). Finally, CircPro generates a final circRNA list including the information of genomic position, coding status, ORF length and junction reads from Ribo-Seq.</p>
+    <p>If you use CircPro in your scientific research, please cite us:</p>
+    <p>Xianwen Meng, Qi Chen, Peijing Zhang, Ming Chen*. <a href="https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btx446" target="_blank">CircPro: an integrated tool for the identification of circRNAs with protein-coding potential. <i><b>Bioinformatics</b></i> 2017; 33:15. doi:10.1093/bioinformatics/btx446.</a></p>
+    </div>
+    <div class="clear"></div>
+    <div class="item1">
+    <h3>Downloads</h3>
+    <ul>
+    <li>Package source: <a href="http://yanshihu.github.io/brain/">CircPro.tar.gz</a></li>
+    <li>Reference manual: <a href="http://yanshihu.github.io/brain/">manual.pdf</a> </li>
+    <li>Example data: <a href="http://yanshihu.github.io/brain/">exampledata.tar.gz</a> </li>
+    </ul>
+    <p></p>
+    </div>
+
+    <div class="item2">
+    <h3>Contact</h3>
+    
+
+		For comments or suggestions, please contact us:<br>
+
+<pre>    Tel/Fax: +86 (0)571-88206122
+    Yanshi Hu: <a href="mailto:yanshihu@zju.edu.cn">yanshihu@zju.edu.cn</a>
+    Ming Chen: <a href="mailto:mchen@zju.edu.cn">mchen@zju.edu.cn</a>
+</pre>
+		<p></p>
+    </div>
+
+
+</div>
+<div class="clear"></div>
+</div>
+<div class="line"></div>
+<div id="footer">	Copyright 2019 - <a href="http://bis.zju.edu.cn/binfo/">Ming Chen's Lab</a>, Zhejiang University.  </div>
+
+
+</body><div id="cyeBlackMaskLayer" style="background-color: rgb(19, 19, 19); position: fixed; width: 1980px; height: 1080px; z-index: -2147483648;"></div><div id="cye-workaround-body" style="position: absolute; left: 0px; top: 0px; z-index: -2147483646; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(242, 245, 243); height: 1666px; width: 1903px;"></div><div id="cye-workaround-body-image" style="position: absolute; left: 0px; top: 0px; z-index: -2147483645; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); height: 1666px; width: 1903px;"></div></html>
