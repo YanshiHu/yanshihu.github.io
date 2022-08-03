@@ -294,7 +294,7 @@
             <i class="fa-li fa fa-graduation-cap"></i>
             <div class="description">
               <p class="course">生物医学工程学士, 2013</p>
-              <p class="institution">山东第一医科大学（原泰山医学院）</p>
+              <p class="institution">山东第一医科大学（山东省医学科学院）</p>
             </div>
           </li>
           
@@ -322,16 +322,24 @@
   <div class="col-xs-12 col-md-4 section-heading">
     <h1>近期发表文章</h1>
     
+    <p class="view-all">
+      <a href="publication/index.html" target="_blank">
+        发表文章完整列表
+        <i class="fa fa-angle-double-right"></i>
+      </a>
+    </p>
   </div>
+
   <div class="col-xs-12 col-md-8">
     
 
     <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
   <div class="row">
-	
+
+
     <div class="col-md-12">
-      <a href="https://academic.oup.com/database/article/doi/10.1093/database/baaa001/5809233" target="_blank">
-        <img src="/img/Database_PncStress.png" class="pub-banner"
+      <a href="https://doi.org/10.1093/bioinformatics/btac520" target="_blank">
+        <img src="/img/CoGO.jpeg" class="pub-banner"
              itemprop="image">
       </a>
     </div>
@@ -340,18 +348,192 @@
     
 
       <h3 class="article-title" itemprop="name">
-        <a href="https://academic.oup.com/database/article/doi/10.1093/database/baaa001/5809233" target="_blank" itemprop="url">PncStress: a manually curated database of experimentally validated stress-responsive non-coding RNAs in plants</a>
+        <a href="https://doi.org/10.1093/bioinformatics/btac520" target="_blank" itemprop="url">CoGO: a contrastive learning framework to predict disease similarity based on gene network and ontology structure</a>
       </h3>
 
       <div class="pub-abstract" itemprop="text">
         
-        Non-coding RNAs (ncRNAs) are recognized as key regulatory molecules in many biological processes. Accumulating evidence indicates that ncRNA-related mechanisms play important roles in plant stress responses. Although abundant plant stress-responsive ncRNAs have been identified, these experimentally validated results have not been gathered into a single public domain archive. Therefore, we established PncStress by curating experimentally validated stress-responsive ncRNAs in plants, including microRNAs, long non-coding RNAs and circular RNAs. The current version of PncStress contains 4227 entries from 114 plants covering 48 biotic and 91 abiotic stresses. For each entry, PncStress has biological information and network visualization. Serving as a manually curated database, PncStress will become a valuable resource in support of plant stress response research.
+        Quantifying the similarity of human diseases provides guiding insights to the discovery of micro-scope mechanisms from a macro scale. Previous work demonstrated that better performance can be gained by integrating multiview data sources or applying machine learning techniques. However, designing an efficient framework to extract and incorporate information from different biological data using deep learning models remains unexplored.
+		We present CoGO, a Contrastive learning framework to predict disease similarity based on Gene network and Ontology structure, which incorporates the gene interaction network and gene ontology (GO) domain knowledge using graph deep learning models. First, graph deep learning models are applied to encode the features of genes and GO terms from separate graph structure data. Next, gene and GO features are projected to a common embedding space via a nonlinear projection. Then cross-view contrastive loss is applied to maximize the agreement of corresponding gene-GO associations and lead to meaningful gene representation. Finally, CoGO infers the similarity between diseases by the cosine similarity of disease representation vectors derived from related gene embedding. In our experiments, CoGO outperforms the most competitive baseline method on both AUROC and AUPRC, especially improves 19.57% in AUPRC (0.7733). The prediction results are significantly comparable with other disease similarity studies and thus highly credible. Furthermore, we conduct a detailed case study of top similar disease pairs which is demonstrated by other studies. Empirical results show that CoGO achieves powerful performance in disease similarity problem.
+      </div>
+
+      <div class="pub-authors" itemprop="author">
+        
+        Y Chen<sup>#</sup>, <strong>YS Hu</strong><sup>#</sup>, X Hu, C Feng, M Chen<sup>*</sup>
+        
+      </div>
+
+      <div class="pub-publication">
+        
+        <em>Bioinformatics</em>
+        
+      </div>
+	  
+	  <div class="pub-links">
+        
+<a class="btn btn-primary btn-outline btn-xs" href="https://pubmed.ncbi.nlm.nih.gov/35900147" target="_blank">
+  PubMed
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://www.doi.org/10.1093/bioinformatics/btac520" target="_blank">
+  DOI
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://oxfordjournals.altmetric.com/details/133247272" target="_blank">
+  Altmetric
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="/PDF/CoGO.pdf" target="_blank">
+  PDF
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/yhchen1123/CoGO" target="_blank">
+  Code
+</a>
+
+      </div>
+	  
+    </div>
+    </div>
+	</div>
+
+
+    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="row">
+
+    <div class="col-md-12">
+      <a href="https://doi.org/10.3390/biom12081067" target="_blank">
+        <img src="/img/CoVM2.png" class="pub-banner"
+             itemprop="image">
+      </a>
+    </div>
+    <div class="col-md-12">
+
+    
+
+      <h3 class="article-title" itemprop="name">
+        <a href="https://doi.org/10.3390/biom12081067" target="_blank" itemprop="url">CoVM<sup>2</sup>: Molecular Biological Data Integration of SARS-CoV-2 Proteins in a Macro-to-Micro Method</a>
+      </h3>
+
+      <div class="pub-abstract" itemprop="text">
+        
+        The COVID-19 pandemic has been a major public health event since 2020. Multiple variant strains of SARS-CoV-2, the causative agent of COVID-19, were detected based on the mutation sites in their sequences. These sequence mutations may lead to changes in the protein structures and affect the binding states of SARS-CoV-2 and human proteins. Experimental research on SARS-CoV-2 has accumulated a large amount of structural data and protein-protein interactions (PPIs), but the studies on the SARS-CoV-2–human PPI networks lack integration of physical associations with possible protein docking information. In addition, the docking structures of variant viral proteins with human receptor proteins are still insufficient. This study constructed SARS-CoV-2–human protein–protein interaction network with data integration methods. Crystal structures were collected to map the interaction pairs. The pairs of direct interactions and physical associations were selected and analyzed for variant docking calculations. The study examined the structures of spike (S) glycoprotein of variants Delta B.1.617.2, Omicron BA.1, and Omicron BA.2. The calculated docking structures of S proteins and potential human receptors were obtained. The study integrated binary protein interactions with 3D docking structures to fulfill an extended view of SARS-CoV-2 proteins from a macro- to micro-scale.
         
       </div>
 
       <div class="pub-authors" itemprop="author">
         
-        W Wu, Y Wu, D Hu, Y Zhou, <strong>YS Hu</strong>, Y Chen, M Chen<sup>*</sup>
+        H Chen, X Hu, <strong>YS Hu</strong>, J Zhou, M Chen<sup>*</sup>
+        
+      </div>
+
+      <div class="pub-publication">
+        
+        <em>Biomolecules</em>
+        
+      </div>
+	  
+	  <div class="pub-links">
+        
+<a class="btn btn-primary btn-outline btn-xs" href="https://pubmed.ncbi.nlm.nih.gov/?" target="_blank">
+  PubMed
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC?" target="_blank">
+  PMC
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://doi.org/10.3390/biom12081067" target="_blank">
+  DOI
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://oxfordjournals.altmetric.com/details/?" target="_blank">
+  Altmetric
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="/PDF/CoVM2.pdf" target="_blank">
+  PDF
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://bis.zju.edu.cn/overcovid/covm2" target="_blank">
+  Dataset
+</a>
+
+<!--
+<a class="btn btn-primary btn-outline btn-xs" href="https://guangchuangyu.github.io/presentation/2016-ggtree-chinar">
+  Slides
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://guangchuangyu.github.io/">
+  Video
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/GuangchuangYu/ggtree">
+  Code
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://guangchuangyu.github.io/">
+  Dataset
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://guangchuangyu.github.io/ggtree/">
+  Project
+</a>
+-->
+
+
+      </div>
+    </div>
+	</div>
+</div>
+
+    
+    
+    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="row">
+
+    
+
+    <div class="col-md-12">
+      <a href="https://doi.org/10.1093/database/baac051" target="_blank">
+        <img src="/img/LBD.png" class="pub-banner"
+             itemprop="image">
+      </a>
+    </div>
+    <div class="col-md-12">
+
+    
+
+      <h3 class="article-title" itemprop="name">
+        <a href="https://doi.org/10.1093/database/baac051" target="_blank" itemprop="url">LBD: a manually curated database of experimentally validated lymphoma biomarkers</a>
+      </h3>
+
+      <div class="pub-abstract" itemprop="text">
+        
+        Lymphoma is a heterogeneous disease caused by malignant proliferation of lymphocytes, resulting in significant mortality worldwide. While more and more lymphoma biomarkers have been identified with the advent and development of precision medicine, there are currently no databases dedicated to systematically gathering these scattered treasures. Therefore, we developed a lymphoma biomarker database (LBD) to curate experimentally validated lymphoma biomarkers in this study. LBD consists of 793 biomarkers extracted from 978 articles covering diverse subtypes of lymphomas, including 715 single and 78 combined biomarkers. These biomarkers can be categorized into molecular, cellular, image, histopathological, physiological and other biomarkers with various functions such as prognosis, diagnosis and treatment. As a manually curated database that provides comprehensive information about lymphoma biomarkers, LBD is helpful for personalized diagnosis and treatment of lymphoma. Database URL: <a href="http://bis.zju.edu.cn/LBD"  target="_blank">http://bis.zju.edu.cn/LBD</a>
+        
+      </div>
+
+      <div class="pub-authors" itemprop="author">
+        
+        B Tan, S Xin, <strong>YS Hu</strong>, C Feng<sup>*</sup>, M Chen<sup>*</sup>
         
       </div>
 
@@ -363,156 +545,38 @@
 	  
 	  <div class="pub-links">
         
-<a class="btn btn-primary btn-outline btn-xs" href="https://pubmed.ncbi.nlm.nih.gov/32185394" target="_blank">
+<a class="btn btn-primary btn-outline btn-xs" href="https://pubmed.ncbi.nlm.nih.gov/35788654" target="_blank">
   PubMed
 </a>
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7078067" target="_blank">
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9254641" target="_blank">
   PMC
 </a>
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.doi.org/10.1093/database/baaa001" target="_blank">
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://doi.org/10.1093/database/baac051" target="_blank">
   DOI
 </a>
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://oxfordjournals.altmetric.com/details/77727434" target="_blank">
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://oxfordjournals.altmetric.com/details/130719989" target="_blank">
   Altmetric
 </a>
 
-<a class="btn btn-primary btn-outline btn-xs" href="/PDF/PncStress.pdf" target="_blank">
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="/PDF/LBD.pdf" target="_blank">
   PDF
 </a>
 
-      </div>
-	  
-    </div>
-    </div>
-	</div>
 
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
 
-    
-
-    <div class="col-md-12">
-      <a href="https://www.nature.com/articles/s41388-019-0763-0" target="_blank">
-        <img src="/img/ZJU_SOM_Graphical-Abstract.jpg" class="pub-banner"
-             itemprop="image">
-      </a>
-    </div>
-    <div class="col-md-12">
-
-    
-
-      <h3 class="article-title" itemprop="name">
-        <a href="https://www.nature.com/articles/s41388-019-0763-0" target="_blank" itemprop="url">The inflammatory cytokine IL-6 induces FRA1 deacetylation promoting colorectal cancer stem-like properties</a>
-      </h3>
-
-      <div class="pub-abstract" itemprop="text">
-        
-        Colorectal cancer (CRC) has long been known for its tight association with chronic inflammation, thought to play a key role in tumor onset and malignant progression through the modulation of cancer stemness. However, the underlying molecular and cellular mechanisms are still largely elusive. Here we show that the IL-6/STAT3 inflammatory signaling axis induces the deacetylation of FRA1 at the Lys-116 residue located within its DNA-binding domain. The HDAC6 deacetylase underlies this key modification leading to the increase of FRA1 transcriptional activity, the subsequent transactivation of NANOG expression, and the acquisition of stem-like cellular features. As validated in a large (n = 123) CRC cohort, IL-6 secretion was invariably accompanied by increased FRA1 deacetylation at K116 and an overall increase in its protein levels, coincident with malignant progression and poor prognosis. Of note, combined treatment with the conventional cytotoxic drug 5-FU together with Tubastatin A, a HDAC6-specific inhibitor, resulted in a significant in vivo synergistic inhibitory effect on tumor growth through suppression of CRC stemness. Our results reveal a novel transcriptional and posttranslational regulatory cross-talk between inflammation and stemness signaling pathways that underlie self-renewal and maintenance of CRC stem cells and promote their malignant behavior. Combinatorial treatment aimed at the core regulatory mechanisms downstream of IL-6 may offer a novel promising approach for CRC treatment.
-        
-      </div>
-
-      <div class="pub-authors" itemprop="author">
-        
-        T Wang, P Song, T Zhong, X Wang, X Xiang, Q Liu, H Chen, T Xia, H Liu, Y Niu, <strong>YS Hu</strong>, L Xu, Y Shao, L Zhu, H Qi, J Shen, T Hou, R Fodde<sup>*</sup>, J Shao<sup>*</sup>
-        
-      </div>
-
-      <div class="pub-publication">
-        
-        <em>Oncogene</em>
-        
-      </div>
-	  
-	  <div class="pub-links">
-        
-<a class="btn btn-primary btn-outline btn-xs" href="https://pubmed.ncbi.nlm.nih.gov/30804456" target="_blank">
-  PubMed
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6756002" target="_blank">
-  PMC
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://doi.org/10.1038/s41388-019-0763-0" target="_blank">
-  DOI
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.altmetric.com/details/56040357" target="_blank">
-  Altmetric
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="/PDF/s41388-019-0763-0.pdf" target="_blank">
-  PDF
-</a>
-
-      </div>
-    </div>
-	</div>
-</div>		
-	
-	
-    
-    
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-
-    
-
-    <div class="col-md-12">
-      <a href="https://alzres.biomedcentral.com/articles/10.1186/s13195-017-0252-z" target="_blank">
-        <img src="/img/Alzgset.jpg" class="pub-banner"
-             itemprop="image">
-      </a>
-    </div>
-    <div class="col-md-12">
-
-    
-
-      <h3 class="article-title" itemprop="name">
-        <a href="https://alzres.biomedcentral.com/articles/10.1186/s13195-017-0252-z" target="_blank" itemprop="url">Analyzing the genes related to Alzheimer’s disease via a network and pathway-based approach</a>
-      </h3>
-
-      <div class="pub-abstract" itemprop="text">
-        
-        Our understanding of the molecular mechanisms underlying Alzheimer’s disease (AD) remains incomplete. In this study, we collected genes potentially associated with AD by screening publications on genetic association studies deposited in PubMed. The major biological themes linked with these genes were then revealed by function and biochemical pathway enrichment analysis, and the relation between the pathways was explored by pathway crosstalk analysis. Furthermore, the network features of these AD-related genes were analyzed in the context of human interactome and an AD-specific network was inferred using the Steiner minimal tree algorithm. We compiled 430 human genes reported to be associated with AD from 823 publications. Biological theme analysis indicated that the biological processes and biochemical pathways related to neurodevelopment, metabolism, cell growth and/or survival, and immunology were enriched in these genes. Pathway crosstalk analysis then revealed that the significantly enriched pathways could be grouped into three interlinked modules—neuronal and metabolic module, cell growth/survival and neuroendocrine pathway module, and immune response-related module—indicating an AD-specific immune-endocrine-neuronal regulatory network. Furthermore, an AD-specific protein network was inferred and novel genes potentially associated with AD were identified.By means of network and pathway-based methodology, we explored the pathogenetic mechanism underlying AD at a systems biology level. Results from our work could provide valuable clues for understanding the molecular mechanism underlying AD. In addition, the framework proposed in this study could be used to investigate the pathological molecular network and genes relevant to other complex diseases or phenotypes.
-        
-      </div>
-
-      <div class="pub-authors" itemprop="author">
-        
-        <strong>YS Hu</strong>, J Xin, Y Hu, L Zhang<sup>*</sup>, J Wang<sup>*</sup>
-        
-      </div>
-
-      <div class="pub-publication">
-        
-        <em>Alzheimer's Research & Therapy</em>
-        
-      </div>
-	  
-	  <div class="pub-links">
-        
-<a class="btn btn-primary btn-outline btn-xs" href="https://pubmed.ncbi.nlm.nih.gov/28446202" target="_blank">
-  PubMed
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5406904" target="_blank">
-  PMC
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.doi.org/10.1186/s13195-017-0252-z" target="_blank">
-  DOI
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://biomedcentral.altmetric.com/details/19645234" target="_blank">
-  Altmetric
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="/PDF/s13195-017-0252-z.pdf" target="_blank">
-  PDF
+<a class="btn btn-primary btn-outline btn-xs" href="http://bis.zju.edu.cn/LBD" target="_blank">
+  Dataset
 </a>
 
 <!--
@@ -548,214 +612,8 @@
 </div>
 
 
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-
-    <div class="col-md-12">
-      <a href="https://sci-hub.se/10.1007/s12035-016-9998-8" target="_blank">
-        <img src="/img/PDgset.gif" class="pub-banner"
-             itemprop="image">
-      </a>
-    </div>  
-    <div class="col-md-12">
-
-    
-
-      <h3 class="article-title" itemprop="name">
-        <a href="https://sci-hub.se/10.1007/s12035-016-9998-8" target="_blank" itemprop="url">Network and Pathway-Based Analyses of Genes Associated with Parkinson's Disease</a>
-      </h3>
-
-      <div class="pub-abstract" itemprop="text">
-        
-        Parkinson's disease (PD) is a major neurodegenerative disease influenced by both genetic and environmental factors. Although previous studies have provided insights into the significant impacts of genetic factors on PD, the molecular mechanism underlying PD remains largely unclear. Under such situation, a comprehensive analysis focusing on biological function and interactions of PD-related genes will provide us valuable information to understand the pathogenesis of PD. In the current study, by reviewing the literatures deposited in PUBMED, we identified 242 genes genetically associated with PD, referred to as PD-related genes gene set (PDgset). Functional analysis revealed that biological processes and biochemical pathways related to neurodevelopment, metabolism, and immune system were enriched in PDgset. Then, pathway crosstalk analysis indicated that the enriched pathways could be grouped into two modules, with one module consisted of pathways mainly involved in neuronal signaling and another in immune response. Further, based on a global human interactome, we found that PDgset tended to have more moderate degree compared with cancer-related genes. Moreover, PD-specific molecular network was inferred using Steiner minimal tree algorithm and some potential related genes associated with PD were identified. In summary, by using network- and pathway-based methods to explore pathogenetic mechanism underlying PD, results from our work may have important implications for understanding the molecular mechanism underlying PD. Also, the framework proposed in our current work can be used to infer pathological molecular network and genes related to a specific disease.
-        
-      </div>
-
-      <div class="pub-authors" itemprop="author">
-        
-        <strong>YS Hu</strong>, Z Pan, Y Hu, L Zhang<sup>*</sup>, J Wang<sup>*</sup>
-        
-      </div>
-
-      <div class="pub-publication">
-        
-        <em>Molecular Neurobiology</em>
-        
-      </div>
-
-	  
-	  <div class="pub-links">
-        
-<a class="btn btn-primary btn-outline btn-xs" href="https://pubmed.ncbi.nlm.nih.gov/27349437" target="_blank">
-  PubMed
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.doi.org/10.1007/s12035-016-9998-8" target="_blank">
-  DOI
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://springeropen.altmetric.com/details/9126069" target="_blank">
-  Altmetric
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="/PDF/Hu2017_Article_NetworkAndPathway-BasedAnalyse.pdf" target="_blank">
-  PDF
-</a>
-
-      </div>	  
-    </div>	  
-    </div>
-	</div>
-
-	
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-	
-    <div class="col-md-12">
-      <a href="https://www.sciencedirect.com/science/article/pii/S1046202317300531" target="_blank">
-        <img src="/img/Methods_Pathway_Relationship.jpg" class="pub-banner"
-             itemprop="image">
-      </a>
-    </div>
-    <div class="col-md-12">
-
-    
-
-      <h3 class="article-title" itemprop="name">
-        <a href="https://www.sciencedirect.com/science/article/pii/S1046202317300531" target="_blank" itemprop="url">Detecting pathway relationship in the context of human protein-protein interaction network and its application to Parkinson’s disease</a>
-      </h3>
-
-      <div class="pub-abstract" itemprop="text">
-        
-        In human physiological conditions like complex diseases, a large number of genes/proteins, as well as their interactions, are involved. Thus, detecting the biochemical pathways enriched in these genes/proteins and identifying the pathway relationships is critical to understand the molecular mechanisms underlying a disease and can also be valuable in selecting the potential molecular targets for further exploration. In this study, we proposed a method to measure the relationship between pathways based on their distribution in the human PPI network. By representing each pathway as a gene module in the PPI network, a distance was calculated to measure the closeness of two pathways. For the pathways in the KEGG database, a total of 2143 pathway pairs with close connections were identified. Additional evaluations indicated the pathway relationship built via such approach was consistent with available evidence. Further, based on the genes and pathways potentially associated with the pathogenesis of Parkinson’s disease (PD), we analyzed the pathway relationship and identified the major pathways related to this disorder via the new method. Also, by analyzing the pathway interaction network constructed by the identified major pathways, we explored the potential pathway targets that may be important in the etiology and development of PD. In summary, we proposed an approach to measure the relationship between pathways, which could provide a more systematic profile on pathways involved in a phenotype, and may also help to improve the result of pathway enrichment analysis.
-        
-      </div>
-
-      <div class="pub-authors" itemprop="author">
-        
-        Y Hu, Y Yang, Z Fang, <strong>YS Hu</strong>, L Zhang<sup>*</sup>, J Wang<sup>*</sup>
-        
-      </div>
-
-      <div class="pub-publication">
-        
-        <em>Methods</em>
-        
-      </div>
-	  
-	  <div class="pub-links">
-        
-<a class="btn btn-primary btn-outline btn-xs" href="https://pubmed.ncbi.nlm.nih.gov/28790017" target="_blank">
-  PubMed
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.doi.org/10.1016/j.ymeth.2017.08.001" target="_blank">
-  DOI
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://plu.mx/plum/a/?doi=10.1016%2Fj.ymeth.2017.08.001&theme=plum-sciencedirect-theme&hideUsage=true&display-tab=summary-content" target="_blank">
-  PlumX
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="/PDF/1-s2.0-S1046202317300531-main.pdf" target="_blank">
-  PDF
-</a>
-
-      </div>
-	  
-    </div>
-    </div>
-	</div>
-
-	
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-  
-    <div class="col-md-12">
-      <a href="https://academic.oup.com/database/article/doi/10.1093/database/bax097/4774645" target="_blank">
-        <img src="/img/Database_GRONS.jpg" class="pub-banner"
-             itemprop="image">
-      </a>
-    </div>	
-    <div class="col-md-12">
-
-    
-
-      <h3 class="article-title" itemprop="name">
-        <a href="https://academic.oup.com/database/article/doi/10.1093/database/bax097/4774645" target="_blank" itemprop="url">GRONS: a comprehensive genetic resource of nicotine and smoking</a>
-      </h3>
-
-      <div class="pub-abstract" itemprop="text">
-        
-        Nicotine, the primary psychoactive component in tobacco, can exert a broad impact on both the central and peripheral nervous systems. During the past years, a tremendous amount of efforts has been put to exploring the molecular mechanisms underlying tobacco smoking related behaviors and diseases, and many susceptibility genes have been identified via various genomic approaches. For many human complex diseases, there is a trend towards collecting and integrating the data from genetic studies and the biological information related to them into a comprehensive resource for further investigation, but we have not found such an effort for nicotine addiction or smoking-related phenotypes yet. To collect, curate, and integrate cross-platform genetic data so as to make them interpretable and easily accessible, we developed Genetic Resources Of Nicotine and Smoking (GRONS), a comprehensive database for genes related to biological response to nicotine exposure, tobacco smoking related behaviors or diseases. GRONS deposits genes from nicotine addiction studies in the following four categories, i.e. association study, genome-wide linkage scan, expression analysis on genes/proteins via high-throughput technologies, as well as single gene/protein-based experimental studies via literature search. Moreover, GRONS not only provides tools for data browse, search and graphical presentation of gene prioritization, but also presents the results from comprehensive bioinformatics analyses for the prioritized genes associated with nicotine addiction. With more and more genetic data and analysis tools integrated, GRONS will become a useful resource for studies focusing on nicotine addiction or tobacco smoking. Database URL: <a href="http://bioinfo.tmu.edu.cn/GRONS/"  target="_blank">bioinfo.tmu.edu.cn/GRONS</a>
-      </div>
-
-      <div class="pub-authors" itemprop="author">
-        
-        Z Fang, Y Yang, <strong>YS Hu</strong>, Ming D Li<sup>*</sup>, J Wang<sup>*</sup>
-        
-      </div>
-
-      <div class="pub-publication">
-        
-        <em>Database</em>
-        
-      </div>
-	  	  
-	  <div class="pub-links">
-        
-<a class="btn btn-primary btn-outline btn-xs" href="https://pubmed.ncbi.nlm.nih.gov/31725863" target="_blank">
-  PubMed
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5750854" target="_blank">
-  PMC
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.doi.org/10.1093/database/bax097" target="_blank">
-  DOI
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://oxfordjournals.altmetric.com/details/30904936" target="_blank">
-  Altmetric
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="/PDF/bax097.pdf" target="_blank">
-  PDF
-</a>
-
-<!--
-<a class="btn btn-primary btn-outline btn-xs" href="https://guangchuangyu.github.io/presentation/2016-ggtree-chinar">
-  Slides
-</a>
 
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://guangchuangyu.github.io/">
-  Video
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/GuangchuangYu/ggtree">
-  Code
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://guangchuangyu.github.io/">
-  Dataset
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://guangchuangyu.github.io/ggtree/">
-  Project
-</a>
--->
-
-
-      </div>	  
-    </div>	
-	
-    </div>
-	</div>	
 <!--
       <div class="pub-links">
         
@@ -874,6 +732,7 @@
     
 
   </div>
+
 </div>
 
     </div>
