@@ -1597,13 +1597,21 @@ Currently I serve as <strong>(ad hoc) peer reviewer for 17 SCI journals</strong>
 	
 	<script>
 
-	var map = L.map('map').setView([30.29875, 120.084992], 17);
+	// var map = L.map('map').setView([30.29875, 120.084992], 17);
+  var map = L.map('map').setView([30.296392, 120.089568], 60);
 
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors & Yanshi Hu'
-	}).addTo(map);
+	// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	// 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors & Yanshi Hu'
+	// }).addTo(map);
 
-	L.marker([30.29875, 120.084992]).addTo(map)
+
+  L.tileLayer('http://rt0.map.gtimg.com/realtimerender?lang=en&z={z}&x={x}&y={-y}&type=vector&style=3', {
+    attribution: '&copy; <a href="https://ugc.map.qq.com/AppBox/Landlord/serveagreement.html">Tencent map</a> contributors & Yanshi Hu'
+  }).addTo(map);
+
+
+	// L.marker([30.29875, 120.084992]).addTo(map)
+  L.marker([30.296392, 120.089568]).addTo(map)
 		.bindPopup('<div align="center">College of Life Sciences @ ZJU<br>Lab of Bioinformatics</div>')
 		.openPopup();
 
