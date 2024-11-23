@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
   <meta charset="utf-8">
@@ -9,6 +9,7 @@
   <meta name="generator" content="Hugo 0.30.2" />
   <meta name="author" content="Yanshi HU">
   <meta name="description" content="Doctoral student">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
   <link rel="stylesheet" href="/css/highlight.min.css">
@@ -1645,8 +1646,8 @@ Currently I serve as <strong>(ad hoc) peer reviewer for 17 SCI journals</strong>
     function addMapOverlay(){
       var markers = [
         {
-          content:"<div style='font-size:19px;' align=\"center\">Lab of Bioinformatics</div>",
-          title:"<div style='font-size:19px;' align=\"center\">College of Life Sciences @ ZJU</div>",
+          content:"<div align=\"center\">Lab of Bioinformatics</div>",
+          title:"<div align=\"center\">College of Life Sciences @ ZJU</div>",
           imageOffset: {width:-46,height:-21},
           position:{lat:30.302361,lng:120.096054}}
       ];
@@ -1657,19 +1658,16 @@ Currently I serve as <strong>(ad hoc) peer reviewer for 17 SCI journals</strong>
           imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
         })});
         //var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
-
         var opts = {
-          width: 300,
+          width: 310,
           height: 28,  // 弹窗高度
           title: markers[index].title,
           enableMessage: false
         };
-
         var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
         //marker.setLabel(label);
         addClickHandler(marker,infoWindow);
         map.addOverlay(marker);
-
         // 默认打开信息窗口
         marker.openInfoWindow(infoWindow);
     };
