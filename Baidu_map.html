@@ -38,7 +38,7 @@
     }
     function addMapOverlay(){
       var markers = [
-        {content:"<div align=\"center\">生物信息学实验室</div>",title:"<div align=\"center\">浙大生科院</div>",imageOffset: {width:-46,height:-21},position:{lat:30.302595,lng:120.096127}}
+        {content:"<div align=\"center\">生物信息学实验室</div>",title:"<div align=\"center\">浙大生科院</div>",imageOffset: {width:-46,height:-21},position:{lat:30.302361,lng:120.096054}}
       ];
       for(var index = 0; index < markers.length; index++ ){
         var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
@@ -55,6 +55,8 @@
         //marker.setLabel(label);
         addClickHandler(marker,infoWindow);
         map.addOverlay(marker);
+        // 默认打开信息窗口
+        marker.openInfoWindow(infoWindow);
 		};
     }
     //向地图添加控件
